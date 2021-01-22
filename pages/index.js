@@ -23,7 +23,10 @@ export default class Home extends React.Component {
             property="og:description"
             content="An API to get Wikipedia tables as JSON"
           />
-          <meta property="og:image" content="/logo.png" />
+          <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/ibrahimmumcu/wikitable2json/main/public/logo.png"
+          />
         </Head>
 
         <main className={styles.main}>
