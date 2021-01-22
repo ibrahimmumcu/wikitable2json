@@ -18,6 +18,12 @@ export default class Home extends React.Component {
         <Head>
           <title>Wiki Table 2 JSON</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta property="og:title" content="Wiki Table 2 JSON" />
+          <meta
+            property="og:description"
+            content="An API to get Wikipedia tables as JSON"
+          />
+          <meta property="og:image" content="/logo.png" />
         </Head>
 
         <main className={styles.main}>
@@ -32,10 +38,28 @@ export default class Home extends React.Component {
 
         <footer className={styles.footer}>
           <div>
-            Developed by <a href="https://ibrahimmumcu.com" target="_blank">Ibrahim Mumcu</a>
+            Developed by{' '}
+            <a href="https://ibrahimmumcu.com" target="_blank">
+              Ibrahim Mumcu
+            </a>
           </div>
           <div>
-           The source code is on <a href="https://github.com/ibrahimmumcu/wikitable2json" target="_blank" rel="noopener noreferrer">Github</a> - Service is deployed on <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>
+            The source code is on{' '}
+            <a
+              href="https://github.com/ibrahimmumcu/wikitable2json"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>{' '}
+            - Service is deployed on{' '}
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vercel
+            </a>
           </div>
         </footer>
       </div>
