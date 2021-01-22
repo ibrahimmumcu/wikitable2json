@@ -27,6 +27,11 @@ export default class Home extends React.Component {
             property="og:image"
             content="https://raw.githubusercontent.com/ibrahimmumcu/wikitable2json/main/public/logo.png"
           />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@ibrahimmumcu" />
+          <meta name="twitter:title" content="Wiki Table 2 JSON" />
+          <meta name="twitter:description" content="An API to get Wikipedia tables as JSON" />
+          <meta name="twitter:image" content="https://raw.githubusercontent.com/ibrahimmumcu/wikitable2json/main/public/logo.png" />
         </Head>
 
         <main className={styles.main}>
