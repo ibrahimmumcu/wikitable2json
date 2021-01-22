@@ -7,7 +7,7 @@ const htmlParser = require('react-markdown/plugins/html-parser');
 const parseHtml = htmlParser();
 
 export default class Home extends React.Component {
-  static async getInitialProps({ req }) {
+  static async getInitialProps() {
     const content = await require(`../README.md`);
     return { content };
   }

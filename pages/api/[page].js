@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   res.statusCode = 200
   
-  const page = req.query.page ? req.query.page : 'Friends';
+  const page = req.query.page;
   const table = req.query.table ? req.query.table : 0;
   const lang = req.query.lang ? req.query.lang : 'en';
 

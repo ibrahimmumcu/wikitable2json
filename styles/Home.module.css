@@ -15,6 +15,11 @@
   justify-content: center;
   align-items: center;
   max-width: 960px;
+  width: 100%;
+}
+
+.main > div {
+  width: 100%;
 }
 
 .footer {
@@ -29,8 +34,4 @@
   font-size: 12px;
   text-align: center;
   line-height: 18px;
-}
-
-.not {
-  font-style: italic;
 }
