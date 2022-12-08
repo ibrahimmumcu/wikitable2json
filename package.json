@@ -10,7 +10,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
     "github-markdown-css": "^4.0.0",
-    "next": "10.0.5",
+    "next": "10.2.3",
     "node-fetch": "^2.6.1",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",
