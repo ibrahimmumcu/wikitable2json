@@ -22,7 +22,10 @@ export default class Home extends React.Component {
           />
           <link rel="icon" href="/favicon.ico" />
 
-          <meta name="twitter:image" content="/wiki-table-2-json.png" />
+          <meta
+            name="twitter:image"
+            content="https://wikitable2json.vercel.app/wiki-table-2-json.png"
+          />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@ibrahimmumcu" />
           <meta name="twitter:title" content="Wiki Table 2 JSON" />
@@ -31,7 +34,10 @@ export default class Home extends React.Component {
             content="An API to get Wikipedia tables as JSON"
           />
 
-          <meta property="og:image" content="/wiki-table-2-json.png" />
+          <meta
+            property="og:image"
+            content="https://wikitable2json.vercel.app/wiki-table-2-json.png"
+          />
           <meta property="og:title" content="Wiki Table 2 JSON" />
           <meta
             property="og:description"
