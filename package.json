@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "cheerio": "^1.0.0-rc.12",
     "eslint-config-next": "^13.4.3",
     "github-markdown-css": "^5.2.0",
