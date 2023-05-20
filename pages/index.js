@@ -3,8 +3,7 @@ import styles from '../styles/Home.module.css';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import 'github-markdown-css';
-const htmlParser = require('react-markdown/plugins/html-parser');
-const parseHtml = htmlParser();
+import rehypeRaw from 'rehype-raw';
 
 export default class Home extends React.Component {
   static async getInitialProps() {
@@ -30,15 +29,20 @@ export default class Home extends React.Component {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@ibrahimmumcu" />
           <meta name="twitter:title" content="Wiki Table 2 JSON" />
-          <meta name="twitter:description" content="An API to get Wikipedia tables as JSON" />
-          <meta name="twitter:image" content="https://raw.githubusercontent.com/ibrahimmumcu/wikitable2json/main/public/logo.png" />
+          <meta
+            name="twitter:description"
+            content="An API to get Wikipedia tables as JSON"
+          />
+          <meta
+            name="twitter:image"
+            content="https://raw.githubusercontent.com/ibrahimmumcu/wikitable2json/main/public/logo.png"
+          />
         </Head>
 
         <main className={styles.main}>
           <div className="markdown-body">
             <ReactMarkdown
-              escapeHtml={false}
-              astPlugins={[parseHtml]}
+              rehypePlugins={[rehypeRaw]}
               children={this.props.content.default}
             />
           </div>
